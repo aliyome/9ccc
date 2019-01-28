@@ -1,0 +1,13 @@
+#!bin/sh
+
+if grep -E '^(build|ci|feat|fix|docs|style|refactor|perf|test|chore)' $1 > /dev/null; then
+    exit 0
+else
+    echo "コミットコメントが不正です。"
+    echo "コミットコメントの先頭は必ず以下の形式にしてください。"
+    echo "{コミット種別}({スコープ}):"
+    echo ""
+    echo "例："
+    echo "docs(readme): リポジトリの目的を追記"
+    exit 1
+fi

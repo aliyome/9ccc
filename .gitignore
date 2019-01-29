@@ -1,2 +1,7 @@
 a.out
 .bash_history
+
+*~
+*.o
+tmp*
+9cc

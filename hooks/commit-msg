@@ -6,6 +6,8 @@ else
     echo "コミットコメントが不正です。"
     echo "コミットコメントの先頭は必ず以下の形式にしてください。"
     echo "{コミット種別}({スコープ}):"
+    echo "コミット種別:"
+    echo "build | ci | feat | fix | docs | style | refactor | perf | test | chore"
     echo ""
     echo "例："
     echo "docs(readme): リポジトリの目的を追記"
